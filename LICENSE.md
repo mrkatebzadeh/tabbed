@@ -1,8 +1,13 @@
-MIT/X Consortium License
+Copyright
+----
 
 © 2009-2011 Enno Boland <g s01 de>
 © 2011,2015 Connor Lane Smith <cls@lubutu.com>
 © 2012-2015 Christoph Lohmann <20h@r-36.net>
+© 2018 Timothy Rice <notabug:cryptarch/tabbed.git>
+
+MIT/X Consortium License
+----
 
 Permission is hereby granted, free of charge, to any person obtaining a
 copy of this software and associated documentation files (the "Software"),
