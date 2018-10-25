@@ -21,9 +21,9 @@ INCS = -I. -I/usr/include -I$(X11INC) -I${FREETYPEINC}
 LIBS = -L/usr/lib -lc -L${X11LIB} -lX11 ${FREETYPELIBS}
 
 # flags
-CPPFLAGS = -DVERSION=\"${VERSION}\" -D_DEFAULT_SOURCE
-CFLAGS = -std=c99 -pedantic -Wall -Os ${INCS} ${CPPFLAGS}
-LDFLAGS = -s ${LIBS}
+CPPFLAGS = -DVERSION=\"${VERSION}\" -D_DEFAULT_SOURCE -D_FORTIFY_SOURCE=2
+CFLAGS = -std=c99 -pedantic -Wall -O2 -flto -pipe ${INCS} ${CPPFLAGS}
+LDFLAGS = -s -Wl,-z,now -Wl,-z,relro -flto ${LIBS}
 
 # Solaris
 #CFLAGS = -fast ${INCS} -DVERSION=\"${VERSION}\"
