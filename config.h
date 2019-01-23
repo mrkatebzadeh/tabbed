@@ -29,6 +29,6 @@ static Key keys[] = {
 	{ MODKEY,               XK_t,      spawn,       { 0 } },
 	{ MODKEY,               XK_Tab,    rotate,      { .i = +1 } },
 	{ MODKEY|ShiftMask,     XK_Tab,    rotate,      { .i = -1 } },
-	{ MODKEY,               XK_h,      movetab,     { .i = -1 } },
-	{ MODKEY,               XK_l,      movetab,     { .i = +1 } },
+	{ MODKEY|ShiftMask,     XK_h,      movetab,     { .i = -1 } },
+	{ MODKEY|ShiftMask,     XK_l,      movetab,     { .i = +1 } },
 };
