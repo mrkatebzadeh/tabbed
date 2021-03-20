@@ -21,10 +21,6 @@ options:
 
 ${OBJ}: config.h config.mk
 
-config.h:
-	@echo creating $@ from config.def.h
-	@cp config.def.h $@
-
 .o:
 	@echo CC -o $@
 	@${CC} -o $@ $< ${LDFLAGS}
