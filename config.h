@@ -1,13 +1,13 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const char font[]        = "monospace:size=9";
-static const char* normbgcolor  = "#222222";
-static const char* normfgcolor  = "#cccccc";
-static const char* selbgcolor   = "#555555";
-static const char* selfgcolor   = "#ffffff";
-static const char* urgbgcolor   = "#111111";
-static const char* urgfgcolor   = "#cc0000";
+static const char font[]        = "mono:pixelsize=13:antialias=true:autohint=true";
+static const char* normbgcolor  = "#44475a";
+static const char* normfgcolor  = "#ff79c6";
+static const char* selbgcolor   = "#282a36";
+static const char* selfgcolor   = "#bd93f9";
+static const char* urgbgcolor   = "#a00000";
+static const char* urgfgcolor   = "#ffffff";
 static const char before[]      = "<";
 static const char after[]       = ">";
 static const char titletrim[]   = "...";
@@ -20,7 +20,7 @@ static       Bool urgentswitch  = False;
  * then the current position is changed + newposition. If npisrelative
  * is False, then newposition is an absolute position.
  */
-static int  newposition   = 0;
+static int  newposition   = -1;
 static Bool npisrelative  = False;
 
 #define SETPROP(p) { \
